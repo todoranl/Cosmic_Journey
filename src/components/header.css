@@ -1,0 +1,45 @@
+/* header.css */
+
+/* Styles for the navigation bar */
+header {
+  background-color: #241f1f; /* Background color */
+  color: #fff; /* Text color */
+  padding: 1rem; /* Padding inside the navigation bar */
+}
+
+/* Styles for the main container */
+.container {
+  display: flex; /* Display items in a row */
+  align-items: center; /* Vertically center items */
+  justify-content: space-between; /* Space between items */
+  max-width: 1200px; /* Maximum width of the container */
+  margin: 0 auto; /* Center the container horizontally */
+}
+
+/* Styles for the "Cosmic Journey" title */
+h1 {
+  font-size: 1.5rem; /* Font size for the title */
+  margin-right: auto; /* Push "Cosmic Journey" to the left */
+}
+
+/* Styles for the navigation menu */
+nav {
+  display: flex; /* Display items in a row */
+  align-items: center; /* Vertically center items */
+}
+
+/* Styles for the navigation links */
+.nav-link {
+  color: #fff; /* Text color for links */
+  text-decoration: none; /* Remove underline */
+  font-size: 1rem; /* Font size for links */
+  font-weight: 600; /* Font weight for links */
+  margin-right: 1rem; /* Add some right margin to separate links */
+  text-transform: uppercase; /* Transform text to uppercase */
+  transition: color 0.3s; /* Color transition effect */
+
+  /* Styles for the hover effect */
+  &:hover {
+    color: #00f; /* Text color on hover */
+  }
+}

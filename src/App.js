@@ -1,24 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Header from "./components/Header"; // Verificați calea către fișierul Header
+import SolarSystemView from "./components/SolarSystemView";
+import PlanetDetail from "./components/PlanetDetail";
+import "./components/header.css"; // Verificați calea către fișierul CSS din directorul components
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Header />
+      <Routes>
+        <Route path="/" element={<SolarSystemView />} />
+        <Route path="/planets/:planetName" element={<PlanetDetail />} />
+      </Routes>
+    </Router>
   );
 }
 

@@ -1,53 +1,52 @@
-/* Set the background image and ensure that text is readable over it */
+.booking-form {
+  display: flex;
+  flex-direction: line;
+  gap: 1rem;
+  align-items: center; /* Align items in the center */
+}
 
-/* Style the form fields with a semi-transparent background */
-.form-field {
-  background: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
-  border: none;
-  padding: 10px;
-  margin: 10px 0;
+.form-group {
+  display: flex;
+  justify-content: space-between; /* Spread the inputs across the horizontal space */
+}
+
+.form-group > * {
+  flex: 1; /* Each child of form-group takes equal space */
+  margin: 0 0.5rem; /* Add margin for spacing */
+}
+
+.button-group {
+  display: flex;
+  justify-content: center; /* Center align the button */
   width: 100%;
-  box-sizing: border-box;
 }
 
-/* Style the form labels or placeholders */
-.form-label {
-  font-weight: bold;
-  color: #333;
-}
-
-/* Style the button to stand out */
-.button {
-  background: #ff0000; /* Bright red background */
+.btn-red {
+  padding: 0.5rem 1rem; /* Reduced padding for a narrower button */
+  background-color: red;
   color: white;
   border: none;
-  padding: 15px 30px;
-  text-transform: uppercase;
   cursor: pointer;
-  transition: background 0.3s ease;
+  border-radius: 4px;
+  width: 100%; /* Adjust as per requirement */
+  max-width: 200px; /* Maximum width */
 }
 
-.button:hover {
-  background: #e60000; /* Slightly darker red on hover */
+.btn-red:hover {
+  background-color: darkred;
 }
 
-/* Layout for the form */
-.form-container {
-  display: flex;
-  justify-content: space-between;
-  padding: 20px;
-  background: rgba(0, 0, 0, 0.5); /* Dark background for contrast */
-}
-
-/* Responsive adjustments */
+/* Adjustments for smaller screens */
 @media (max-width: 768px) {
-  .form-container {
+  .form-group {
     flex-direction: column;
   }
 
-  .form-field {
-    width: auto; /* Full width on small screens */
+  .form-group > * {
+    margin: 0.5rem 0; /* Adjust margin for vertical layout */
+  }
+
+  .btn-red {
+    width: 80%; /* Increase width on smaller screens */
   }
 }
-
-/* Additional structural and visual styles as needed */

@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import "./header.css"; // Verify the path to the CSS file in the components directory
 
 const Header = () => {
-  // Planet names to create links
   const planets = [
     "Mercury",
     "Venus",
@@ -16,17 +15,15 @@ const Header = () => {
   ];
 
   return (
-    <header className="bg-black text-white p-4">
+    <header className="p-4" style={{ backgroundColor: "transparent" }}>
       <div className="container mx-auto flex justify-between items-center">
-        <h1 className="text-xl">Cosmic Journey</h1>
+        <h1 className="text-xl text-white">Cosmic Journey</h1>
         <nav className="flex space-x-4">
-          {" "}
-          {/* Use flex and space-x-4 for horizontal layout */}
           {planets.map((planet) => (
             <Link
               key={planet}
               to={`/planets/${planet.toLowerCase()}`}
-              className="nav-link p-2"
+              className="nav-link p-2 text-white hover:text-gray-300"
             >
               {planet}
             </Link>

@@ -1,0 +1,49 @@
+/* header.css */
+
+/* Styles for the navigation bar */
+header {
+  background-color: transparent; /* Make the background transparent */
+  color: #fff; /* Text color */
+  padding: 1rem; /* Padding inside the navigation bar */
+  box-shadow: none; /* Remove any shadow effects */
+}
+
+/* Styles for the main container */
+.container {
+  display: flex; /* Display items in a row */
+  align-items: center; /* Vertically center items */
+  justify-content: space-between; /* Space between items */
+  max-width: 1200px; /* Maximum width of the container */
+  margin: 0 auto; /* Center the container horizontally */
+}
+
+/* Styles for the "Cosmic Journey" title */
+h1 {
+  font-size: 1.5rem; /* Font size for the title */
+  margin-right: auto; /* Push "Cosmic Journey" to the left */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* Add shadow for better visibility */
+}
+
+/* Styles for the navigation menu */
+nav {
+  display: flex; /* Display items in a row */
+  align-items: center; /* Vertically center items */
+}
+
+/* Styles for the navigation links */
+.nav-link {
+  color: #fff; /* Text color for links */
+  text-decoration: none; /* Remove underline */
+  font-size: 1rem; /* Font size for links */
+  font-weight: 600; /* Font weight for links */
+  margin-right: 1rem; /* Add some right margin to separate links */
+  text-transform: uppercase; /* Transform text to uppercase */
+  transition: color 0.3s, text-shadow 0.3s; /* Color and shadow transition effect */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7); /* Add shadow for better visibility */
+
+  /* Styles for the hover effect */
+  &:hover {
+    color: #00f; /* Text color on hover */
+    text-shadow: none; /* Remove shadow on hover */
+  }
+}

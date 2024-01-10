@@ -17,7 +17,9 @@ const Header = () => {
   return (
     <header className="p-4" style={{ backgroundColor: "transparent" }}>
       <div className="container mx-auto flex justify-between items-center">
-        <h1 className="text-xl text-white">Cosmic Journey</h1>
+      <Link to={`/`} className="nav-link p-2 text-white hover:text-gray-300">
+        Cosmic Journey
+      </Link>
         <nav className="flex space-x-4">
           {planets.map((planet) => (
             <Link

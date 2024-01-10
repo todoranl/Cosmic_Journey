@@ -7,16 +7,16 @@ import "./components/header.css"; // Verificați calea către fișierul CSS din 
 import Home from "./components/Home";
 import BookingForm from "./components/BookingForm";
 import "./components/BookingForm.css";
+import Earth from './pages/Earth';
+import "./index";
 
 function App() {
   return (
     <Router>
       <Header />
-      <Home />
-      <BookingForm />
       <Routes>
         <Route path="/" element={<SolarSystemView />} />
-        <Route path="/planets/:planetName" element={<PlanetDetail />} />
+        <Route path="/planets/earth" element={<Earth />} />
       </Routes>
     </Router>
   );

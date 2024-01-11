@@ -1,16 +1,15 @@
+// src/pages/Terra.jsx
 import React from 'react';
+import ItemThumbnailsDemo from '../components/ItemThumbnailsDemo';
 
-const Earth = () => {
+const Terra = () => {
   return (
-    <div className="earth-page" style={{background_color:'cyan'}}>
-      <h1>Earth</h1>
-      <p>
-        Earth is the third planet from the Sun and the only known astronomical object to harbor life.
-        Earth's atmosphere and magnetic field protect it from harmful solar radiation, making it conducive to life.
-      </p>
-      {/* Add more details and styling as needed */}
-    </div>
+      <div className="planet-page">
+          <h1>Terra</h1>
+          <ItemThumbnailsDemo planetName="Terra" />
+          {/* Other content for Terra */}
+      </div>
   );
 };
 
-export default Earth;
+export default Terra;

@@ -9,6 +9,14 @@ import BookingForm from "./components/BookingForm";
 import "./components/BookingForm.css";
 import Earth from './pages/Earth';
 import "./index";
+import Mercury from './pages/Mercury';
+import Jupiter from './pages/Jupiter';
+import Neptune from './pages/Neptune';
+import Saturn from './pages/Saturn';
+import Uranus from './pages/Uranus';
+import Venus from './pages/Venus';
+import Mars from './pages/Mars';
+
 
 function App() {
   return (
@@ -17,6 +25,13 @@ function App() {
       <Routes>
         <Route path="/" element={<SolarSystemView />} />
         <Route path="/planets/earth" element={<Earth />} />
+        <Route path="/planets/mercury" element={<Mercury />} />
+    <Route path="/planets/jupiter" element={<Jupiter />} />
+    <Route path="/planets/neptune" element={<Neptune />} />
+    <Route path="/planets/saturn" element={<Saturn />} />
+    <Route path="/planets/uranus" element={<Uranus />} />
+    <Route path="/planets/venus" element={<Venus />} />
+    <Route path="/planets/mars" element={<Mars />} />
       </Routes>
     </Router>
   );

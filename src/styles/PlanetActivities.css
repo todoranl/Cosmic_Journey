@@ -1,0 +1,17 @@
+/* src/styles/PlanetActivities.css */
+
+.activities-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    grid-gap: 20px; /* Space between grid items */
+}
+
+.activity-item {
+    display: flex;
+    align-items: center; /* Align image and text vertically */
+}
+
+.activity-item img {
+    width: 100%; /* Adjust as needed */
+    margin-right: 10px; /* Space between image and description */
+}

@@ -2,8 +2,8 @@
 
 /* Styles for the navigation bar */
 header {
-  background-color: transparent; /* Make the background transparent */
-  color: #fff; /* Text color */
+
+  color: #eb0707; /* Text color */
   padding: 1rem; /* Padding inside the navigation bar */
   box-shadow: none; /* Remove any shadow effects */
 }

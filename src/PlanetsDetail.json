@@ -1,0 +1,58 @@
+[
+    {
+        "name": "Mercury",
+        "description": "The smallest and fastest planet, Mercury is the closest planet to the Sun and whips around it every 88 Earth days.",
+        "rotationSpeed": "58.6 days",
+        "distanceFromEarth": "77 million km"
+      },
+    {
+      "name": "Venus",
+      "description": "Venus is the second planet from the Sun and is the hottest planet. It has a thick atmosphere full of the greenhouse gas carbon dioxide and clouds made of sulfuric acid.",
+      "rotationSpeed": "243 days",
+      "distanceFromEarth": "41 million km"
+     
+    },
+    {
+      "name": "Earth",
+      "description": "Earth, our home planet, is the third planet from the Sun. It is the only planet known to have an atmosphere containing free oxygen, oceans of liquid water on its surface, and, of course, life.",
+      "rotationSpeed": "24 hours",
+      "distanceFromSun": "149.6 million km"
+
+    },
+    {
+      "name": "Mars",
+      "description": "Mars is the fourth planet from the Sun and is known as the Red Planet due to its reddish appearance. It has the largest volcano in the solar system, Olympus Mons.",
+      "rotationSpeed": "1.03 days",
+      "distanceFromEarth": "225 million km"
+      
+    },
+    {
+      "name": "Jupiter",
+      "description": "Jupiter is the fifth planet from the Sun and the largest in the solar system. It is a gas giant with a mass more than two and a half times that of all the other planets combined.",
+      "rotationSpeed": "9.9 hours",
+      "distanceFromEarth": "588 million km"
+      
+    },
+    {
+      "name": "Saturn",
+      "description": "Saturn is the sixth planet from the Sun and the second-largest in the solar system. It is a gas giant with an iconic ring system, made up of ice, rock, and dust.",
+      "rotationSpeed": "10.7 hours",
+      "distanceFromEarth": "1.2 billion km"
+     
+    },
+    {
+      "name": "Uranus",
+      "description": "Uranus is the seventh planet from the Sun. It has the coldest planetary atmosphere in the solar system and has 27 known moons, mostly named after characters from the works of Shakespeare and Alexander Pope.",
+      "rotationSpeed": "17.2 hours",
+      "distanceFromEarth": "2.6 billion km"
+     
+    },
+    {
+      "name": "Neptune",
+      "description": "Neptune is the eighth and farthest known planet from the Sun in the solar system. It is a gas giant, and it has a similar composition to Uranus.",
+      "rotationSpeed": "16 hours",
+      "distanceFromEarth": "4.3 billion km"
+     
+    }
+  ]
+  

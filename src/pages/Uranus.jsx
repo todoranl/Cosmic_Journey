@@ -4,7 +4,7 @@ import ItemThumbnailsDemo from '../components/ItemThumbnailsDemo';
 
 const Uranus = () => {
     return (
-        <div>
+        <div className="planet-page">
             <h1>Uranus</h1>
             <ItemThumbnailsDemo planetName="Uranus" />
             {/* Other content for Mercur */}

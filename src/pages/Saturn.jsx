@@ -4,7 +4,7 @@ import ItemThumbnailsDemo from '../components/ItemThumbnailsDemo';
 
 const Saturn = () => {
     return (
-        <div>
+        <div className="planet-page">
             <h1>Saturn</h1>
             <ItemThumbnailsDemo planetName="Saturn" />
             {/* Other content for Mercur */}

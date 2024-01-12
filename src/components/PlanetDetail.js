@@ -1,33 +1,13 @@
-// PlanetDetail.js
-import React, { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
-import axios from "axios";
+// src/components/PlanetDetail.js
+import React from 'react';
 
-const PlanetDetail = () => {
-  const [planetData, setPlanetData] = useState(null);
-  const { planetName } = useParams();
-
-  useEffect(() => {
-    axios
-      .get(`http://localhost:5000/api/celestial_objects/${planetName}`)
-      .then((response) => {
-        setPlanetData(response.data);
-      })
-      .catch((error) => console.log(error));
-  }, [planetName]);
-
-  if (!planetData) return <div>Loading...</div>;
-
+const PlanetDetail = ({ planet }) => {
   return (
-    <div className="container mx-auto">
-      <div className="flex">
-        <div className="w-1/2">{/* Afișează poza planetei */}</div>
-        <div className="w-1/2">
-          <h2>{planetData.name}</h2>
-          {/* Alte detalii ale planetei */}
-          <button>Explore Activities</button>
-        </div>
-      </div>
+    <div className="planet-detail">
+      <h2>{planet.name}</h2>
+      <p>{planet.description}</p>
+      <p>Rotation Speed: {planet.rotationSpeed}</p>
+      <p>Distance from Earth: {planet.distanceFromEarth}</p>
     </div>
   );
 };

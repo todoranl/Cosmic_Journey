@@ -18,17 +18,17 @@
 
 .main-image {
     max-width: 100%; /* Adjust the width as needed */
-    max-height: 600px; /* Set a maximum height */
+    max-height: 700px; /* Set a maximum height */
     object-fit: cover; /* This will ensure the image covers the area nicely */
     display: block;
     margin: auto;
 }
 .card {
-    margin-left: 5cm;
+    margin-left: 7cm;
 }
 .planet-page h1 {
     /* Add your specific styles for the <h1> tag here */
-    text-align: center;
-    color: #0c0c0c; /* Example color */
+    text-align: right !important;
+    color: #f11717; /* Example color */
     margin-bottom: 20px; /* Example spacing */
 }

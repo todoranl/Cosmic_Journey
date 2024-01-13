@@ -22,7 +22,9 @@ function App() {
   return (
     <Router>
       <Header />
+     
       <Routes>
+      <Route path="/" element={<Home />} />
         <Route path="/" element={<SolarSystemView />} />
         <Route path="/planets/earth" element={<Earth />} />
         <Route path="/planets/mercury" element={<Mercury />} />

@@ -1,62 +1,63 @@
-/* src/styles/Planets.css */
-
-.planet-page {
-    display: grid;
-    flex-direction: column;
-    align-items: center;
-    background-image: url('../images/Bg/stele.jpg'); /* Update the path as needed */
-    background-size: cover; /* Cover the entire area */
-    background-position: center; /* Center the image */
-    background-repeat:repeat;
-    
+.planets-text {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    z-index: 0; /* Ensure the text is above the image */
+}
+@media (max-width: 768px) {
+    .planets-text h1 {
+        font-size: 24px; /* Smaller font size for smaller screens */
+    }
+    .planets-text p {
+        font-size: 16px;
+    }
 }
 
-.planet-content {
-    
-    display: flex;
-    justify-content: left;
-    align-items: start; /* Align items at the top */
+@media (max-width: 480px) {
+    .planets-text h1 {
+        font-size: 20px; /* Even smaller font size for very small screens */
+    }
+    .planets-text p {
+        font-size: 14px;
+    }
+}
+/* Even larger screens: min-width 1025px */
+@media (min-width: 1025px) {
+    .planets-text h1 {
+        font-size: 68px; /* Even larger font size */
+    }
+    .planets-text p {
+        font-size: 24px;
+    }
+}
+.activitati img {
     width: 100%;
-   
-   color: aliceblue;
+    height: auto; /* Adjusted to maintain aspect ratio */
+    object-fit: cover;
+    margin-top: -110px;
+}
+.orizont h1 {
+    position: absolute;
+    top: 120%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    z-index: 0; /* Ensure the text is above the image */
 }
 
-.planet-description {
-    margin-left: 120px; /* Space between the image and the description */
-    text-align: justify;
-    max-width: 400px; /* Adjust width as needed to make the text more narrow */
-    font-size: 20px; /* Change the font size to your desired value */
-    font-family: Arial, sans-serif; /* Change the font family to your desired font */
-    margin-top: 220px; /* Add some space at the top to move the text down */
-}
-.planet-specification-tables {
-  
-    padding: 0 24px;
-    color: #ffffff;
-    display: flex;
-    justify-content: space-around; /* Distribute space evenly around the tables */
-    align-items: center; /* Align tables vertically */
-    width: 60%;
-    margin-top: 20px;
-    background: transparent;
-    margin-left: 15%;
+
+.orizont {
+    margin-top: -110px; /* Adjust this value as needed */
+    color: white;
+    text-align: center;
 }
 
-.planet-specification-tables table {
-    border-collapse: collapse;
-    margin: 0 20px; /* Spacing between tables */
-}
-
-.planet-specification-tables td {
-    border: 1px solid #ccc; 
-    padding: 15px;
-    text-align: left;
-}
-.planeta-page h2 {
-    font-family: 'Your Desired Font', sans-serif; /* Change to your desired font */
-    font-size: 24px; /* Change to your desired font size */
-    margin-top: 20px; /* Adjust to drop it down */
-    text-align: right; /* Align the text to the right */
-    margin-right: 35%;
-    
+.orizont img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
 }

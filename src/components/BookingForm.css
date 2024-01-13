@@ -1,8 +1,10 @@
 .booking-form {
   display: flex;
   flex-direction: line;
-  gap: 1rem;
+  gap: -2rem;
   align-items: center; /* Align items in the center */
+  font-size: 16px;
+  
 }
 
 .form-group {
@@ -13,6 +15,9 @@
 .form-group > * {
   flex: 1; /* Each child of form-group takes equal space */
   margin: 0 0.5rem; /* Add margin for spacing */
+  padding: 1rem 2rem;
+  font-size: 20px;
+
 }
 
 .button-group {
@@ -22,14 +27,15 @@
 }
 
 .btn-red {
-  padding: 0.5rem 1rem; /* Reduced padding for a narrower button */
+  padding: 1rem 2rem; /* Reduced padding for a narrower button */
   background-color: red;
   color: white;
   border: none;
   cursor: pointer;
   border-radius: 4px;
   width: 100%; /* Adjust as per requirement */
-  max-width: 200px; /* Maximum width */
+  max-width: 300px; /* Maximum width */
+  font-size: 20px;
 }
 
 .btn-red:hover {

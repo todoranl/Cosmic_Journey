@@ -1,8 +1,30 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import "./header.css"; // Verify the path to the CSS file in the components directory
 
 const Header = () => {
+  const [showHeader, setShowHeader] = useState(true);
+  let lastScrollY = window.scrollY;
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY < lastScrollY) {
+        // Scrolling up
+        setShowHeader(true);
+      } else {
+        // Scrolling down
+        setShowHeader(false);
+      }
+      lastScrollY = window.scrollY;
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   const planets = [
     "Mercury",
     "Venus",
@@ -15,11 +37,11 @@ const Header = () => {
   ];
 
   return (
-    <header className="p-4" style={{ backgroundColor: "transparent" }}>
+    <header className={`header ${showHeader ? 'visible' : 'hidden'}`} style={{ backgroundColor: "transparent" }}>
       <div className="container mx-auto flex justify-between items-center">
-      <Link to={`/`} className="nav-link p-2 text-white hover:text-gray-300">
-        Cosmic Journey
-      </Link>
+        <Link to={`/`} className="nav-link p-2 text-white hover:text-gray-300">
+          Cosmic Journey
+        </Link>
         <nav className="flex space-x-4">
           {planets.map((planet) => (
             <Link

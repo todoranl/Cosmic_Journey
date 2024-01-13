@@ -1,6 +1,6 @@
 import React from 'react'
 import '../styles/Planets.css'; // Import your CSS
-
+import BookingForm from '../components/BookingForm';
 const Neptune = () => {
   return (
     <div className="neptune" style={{ backgroundColor: 'transparent' }}>
@@ -9,7 +9,9 @@ const Neptune = () => {
     <div className="planets-text">
         <h1>NEPTUNE</h1>
         <p>Explore the wonders of the universe!</p>
-       
+        <div className="neptune-form">
+        <BookingForm />
+        </div>
     </div>
     <div className='orizont'>
         <h1>Explore Neptune , and try top 5 activities !</h1>

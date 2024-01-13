@@ -52,7 +52,7 @@ function BookingForm() {
           value={passengers}
           onChange={(e) => setPassengers(e.target.value)}
           min="1"
-          className="form-control"
+          className="form-passengers"
         />
       </div>
 

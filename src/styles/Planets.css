@@ -61,3 +61,20 @@
     height: auto;
     object-fit: cover;
 }
+.neptune-form {
+    margin-top: 110px; /* Adjust this value as needed */
+    color: white;
+    text-align: center;
+}
+.neptune-form {
+    position: absolute;
+    top: 180%; /* Adjust as needed */
+   right: 60%;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 500px;
+    font-size: 20px; /* Adjust the size as needed */
+    font-weight: bold; /* Optional: making the labels bold */
+    font-size: 18px; /* Adjust the size as needed */
+    /* Additional styling for the form container */
+}

@@ -34,6 +34,7 @@ function App() {
     <Route path="/planets/uranus" element={<Uranus />} />
     <Route path="/planets/venus" element={<Venus />} />
     <Route path="/planets/mars" element={<Mars />} />
+    
       </Routes>
     </Router>
   );

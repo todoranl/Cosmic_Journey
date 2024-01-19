@@ -37,8 +37,8 @@ const Header = () => {
   ];
 
   return (
-    <header className={`header ${showHeader ? 'visible' : 'hidden'}`} style={{ backgroundColor: "transparent" }}>
-      <div className="container mx-auto flex justify-between items-center">
+    <header className={`header ${showHeader ? 'visible' : 'hidden'}`}>
+      <div className="container">
         <Link to={`/`} className="nav-link p-2 text-white hover:text-gray-300">
           Cosmic Journey
         </Link>

@@ -2,10 +2,10 @@
 
 /* Styles for the navigation bar */
 .header {
-  position: sticky;
+  position: absolute;
   top: 0;
   z-index: 1000; /* Ensure it stays above other content */
-  transition: top 0.3s;
+  transition: top 0.5s;
   background-color: transparent; 
 }
 .header.hidden {
@@ -15,7 +15,7 @@
 .container {
   display: flex; /* Display items in a row */
   align-items: center; /* Vertically center items */
-  justify-content: space-between; /* Space between items */
+  justify-content: center; /* Space between items */
   max-width: 1200px; /* Maximum width of the container */
   margin: 0 auto; /* Center the container horizontally */
 }
@@ -31,13 +31,15 @@ h1 {
 nav {
   display: flex; /* Display items in a row */
   align-items: center; /* Vertically center items */
+  margin-left: 10rem;
+  margin-right: -80rem;
 }
 
 /* Styles for the navigation links */
 .nav-link {
   color: #fff; /* Text color for links */
   text-decoration: none; /* Remove underline */
-  font-size: 120%; /* Font size for links */
+  font-size: 140%; /* Font size for links */
   font-weight: 600; /* Font weight for links */
   margin-right: 1rem; /* Add some right margin to separate links */
   text-transform: uppercase; /* Transform text to uppercase */
@@ -49,25 +51,6 @@ nav {
     color: #00f; /* Text color on hover */
     text-shadow: none; /* Remove shadow on hover */
   }
-}
-/* header.css */
-
-.header {
-  position: sticky;
-  top: 0;
-  z-index: 1000; /* Keep header above the image */
-  background-color: transparent; /* Transparent background */
-  /* ... other styles ... */
-}
-
-/* Assuming .background-image is the class for your home image */
-.background-image {
-  position: relative; /* Adjust this if needed */
-  top: -100px; /* Move the image upwards */
-  width: 100%;
-  height: calc(100vh + 100px); /* Increase height to fill the moved space */
-  object-fit: cover;
-  z-index: -1; /* Keep image behind the header */
 }
 
 /* ... other styles ... */

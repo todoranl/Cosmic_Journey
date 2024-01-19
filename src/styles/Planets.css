@@ -39,42 +39,576 @@
     object-fit: cover;
     margin-top: -110px;
 }
-.orizont h1 {
-    position: absolute;
-    top: 120%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    text-align: center;
-    z-index: 0; /* Ensure the text is above the image */
-}
 
-
-.orizont {
-    margin-top: -110px; /* Adjust this value as needed */
-    color: white;
-    text-align: center;
-}
-
-.orizont img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
+.neptune {
+    background-size: cover;
+    background-position: center;
+    background-image: url(https://firebasestorage.googleapis.com/v0/b/cosmicjourney-dab3e.appspot.com/o/DALL%C2%B7E%202024-01-13%2004.19.30%20-%20A%20close-up%20view%20of%20Neptune%20with%20a%20predominantly%20black%20background%2C%20focusing%20on%20a%20small%20section%20of%20the%20planet%20to%20emphasize%20its%20weather%20patterns%20and%20surf.png?alt=media&token=d160b82b-db89-464f-851d-a23af6253ebf);
+    height: 100vh;
 }
 .neptune-form {
-    margin-top: 110px; /* Adjust this value as needed */
+    margin-top: 100px; /* Adjust this value as needed */
     color: white;
     text-align: center;
-}
-.neptune-form {
     position: absolute;
-    top: 180%; /* Adjust as needed */
-   right: 60%;
+    top: 200%; /* Adjust as needed */
+    right: 10%; /* This might be too much, consider using a different approach */
+    left: -90%; /* This might be too much, consider using a different approach */
     transform: translateX(-50%);
     width: 100%;
-    max-width: 500px;
-    font-size: 20px; /* Adjust the size as needed */
+    max-width: 500px; /* This controls the max width of the form */
+    font-size: 18px; /* Use a single font-size declaration */
     font-weight: bold; /* Optional: making the labels bold */
-    font-size: 18px; /* Adjust the size as needed */
-    /* Additional styling for the form container */
+    /* No additional styling needed here */
 }
+
+/* Styles for the input fields */
+.neptune-form input {
+    width: fit-content; /* Full width of the form container */
+    max-width: 200px; /* Adjust the max-width as needed */
+    margin: 0 10px; /* Add some space between the fields */
+    /* Other styles for input fields */
+}
+
+/* Styles for the button */
+.neptune-form button {
+    width: auto; /* Adjust the width as needed */
+    padding: 5px 50px; /* Padding for button */
+    /* Other styles for button */
+}
+
+
+.neptune-activities {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0; /* Remove any default margins */
+    padding: 0;
+  }
+  
+  .neptune-activities-image {
+    width: 100%; /* Full width */
+    object-fit: cover; /* Cover the area, may crop the image */
+    display: block; /* Avoid inline whitespace */
+    margin: 0; /* Remove any default margins */
+  }
+
+
+  .filler {
+    width: 100%; /* Ensure it fills the width */
+    background-color: #023e8a; /* Use a color that matches your design */
+    color: white; /* Choose a suitable text color */
+    text-align: center; /* Center the text */
+    padding: 20px 0; /* Add some vertical padding */
+    flex-grow: 500%;
+  }
+  
+  /* Remove any default margins and padding from all elements */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  }
+  
+  .uranus {
+    background-size: cover;
+    background-position: center;
+    background-image: url(https://firebasestorage.googleapis.com/v0/b/cosmicjourney-dab3e.appspot.com/o/uranusbackground.jfif?alt=media&token=3dd4b03b-1217-4087-b580-df1aa77bf9f0);
+    height: 100vh;
+}
+.uranus-form {
+    margin-top: 100px; /* Adjust this value as needed */
+    color: white;
+    text-align: center;
+    position: absolute;
+    top: 200%; /* Adjust as needed */
+    right: 10%; /* This might be too much, consider using a different approach */
+    left: -90%; /* This might be too much, consider using a different approach */
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 500px; /* This controls the max width of the form */
+    font-size: 18px; /* Use a single font-size declaration */
+    font-weight: bold; /* Optional: making the labels bold */
+    /* No additional styling needed here */
+}
+
+/* Styles for the input fields */
+.uranus-form input {
+    width: fit-content; /* Full width of the form container */
+    max-width: 200px; /* Adjust the max-width as needed */
+    margin: 0 10px; /* Add some space between the fields */
+    /* Other styles for input fields */
+}
+
+/* Styles for the button */
+.uranus-form button {
+    width: auto; /* Adjust the width as needed */
+    padding: 5px 50px; /* Padding for button */
+    /* Other styles for button */
+}
+
+
+.uranus-activities {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0; /* Remove any default margins */
+    padding: 0;
+  }
+  
+  .uranus-activities-image {
+    width: 100%; /* Full width */
+    object-fit: cover; /* Cover the area, may crop the image */
+    display: block; /* Avoid inline whitespace */
+    margin: 0; /* Remove any default margins */
+  }
+
+
+  .filler {
+    width: 100%; /* Ensure it fills the width */
+    background-color: #023e8a; /* Use a color that matches your design */
+    color: white; /* Choose a suitable text color */
+    text-align: center; /* Center the text */
+    padding: 20px 0; /* Add some vertical padding */
+    flex-grow: 500%;
+  }
+  
+  /* Remove any default margins and padding from all elements */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  }
+
+  /*SATURN CSS*/
+  
+  
+  .saturn {
+    background-size: cover ;
+    background-position: center;
+    background-image: url(https://firebasestorage.googleapis.com/v0/b/cosmicjourney-dab3e.appspot.com/o/saturnbackground.jfif?alt=media&token=74f8adfd-ce7d-4d80-b9df-ae255e74f689);
+    height: 100vh;
+    
+}
+.saturn-form {
+    margin-top: 100px; /* Adjust this value as needed */
+    color: white;
+    text-align: center;
+    position: absolute;
+    top: 200%; /* Adjust as needed */
+    right: 10%; /* This might be too much, consider using a different approach */
+    left: -90%; /* This might be too much, consider using a different approach */
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 500px; /* This controls the max width of the form */
+    font-size: 18px; /* Use a single font-size declaration */
+    font-weight: bold; /* Optional: making the labels bold */
+    /* No additional styling needed here */
+}
+
+/* Styles for the input fields */
+.saturn-form input {
+    width: fit-content; /* Full width of the form container */
+    max-width: 200px; /* Adjust the max-width as needed */
+    margin: 0 10px; /* Add some space between the fields */
+    /* Other styles for input fields */
+}
+
+/* Styles for the button */
+.saturn-form button {
+    width: auto; /* Adjust the width as needed */
+    padding: 5px 50px; /* Padding for button */
+    /* Other styles for button */
+}
+
+
+.saturn-activities {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0; /* Remove any default margins */
+    padding: 0;
+  }
+  
+  .saturn-activities-image {
+    width: 100%; /* Full width */
+    object-fit: cover; /* Cover the area, may crop the image */
+    display: block; /* Avoid inline whitespace */
+    margin: 0; /* Remove any default margins */
+  }
+
+
+  .filler {
+    width: 100%; /* Ensure it fills the width */
+    background-color: #023e8a; /* Use a color that matches your design */
+    color: white; /* Choose a suitable text color */
+    text-align: center; /* Center the text */
+    padding: 20px 0; /* Add some vertical padding */
+    flex-grow: 500%;
+  }
+  
+  /* Remove any default margins and padding from all elements */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  }
+
+  /*JUPITER CSS*/
+  .jupiter {
+    background-size: cover ;
+    background-position: center;
+    background-image: url(https://firebasestorage.googleapis.com/v0/b/cosmicjourney-dab3e.appspot.com/o/jupiterbackground1.0.jpg?alt=media&token=778f99db-71f9-4e05-bbe6-29b23c0c421d);
+    height: 100vh;
+    
+}
+.jupiter-form {
+    margin-top: 100px; /* Adjust this value as needed */
+    color: white;
+    text-align: center;
+    position: absolute;
+    top: 200%; /* Adjust as needed */
+    right: 10%; /* This might be too much, consider using a different approach */
+    left: -90%; /* This might be too much, consider using a different approach */
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 500px; /* This controls the max width of the form */
+    font-size: 18px; /* Use a single font-size declaration */
+    font-weight: bold; /* Optional: making the labels bold */
+    /* No additional styling needed here */
+}
+
+/* Styles for the input fields */
+.jupiter-form input {
+    width: fit-content; /* Full width of the form container */
+    max-width: 200px; /* Adjust the max-width as needed */
+    margin: 0 10px; /* Add some space between the fields */
+    /* Other styles for input fields */
+}
+
+/* Styles for the button */
+.jupiter-form button {
+    width: auto; /* Adjust the width as needed */
+    padding: 5px 50px; /* Padding for button */
+    /* Other styles for button */
+}
+
+
+.jupiter-activities {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0; /* Remove any default margins */
+    padding: 0;
+  }
+  
+  .jupiter-activities-image {
+    width: 100%; /* Full width */
+    object-fit: cover; /* Cover the area, may crop the image */
+    display: block; /* Avoid inline whitespace */
+    margin: 0; /* Remove any default margins */
+  }
+
+
+  .filler {
+    width: 100%; /* Ensure it fills the width */
+    background-color: #023e8a; /* Use a color that matches your design */
+    color: white; /* Choose a suitable text color */
+    text-align: center; /* Center the text */
+    padding: 20px 0; /* Add some vertical padding */
+    flex-grow: 500%;
+  }
+  
+  /* Remove any default margins and padding from all elements */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  }
+/*MARS CSS*/
+.mars {
+    background-size: cover ;
+    background-position: center;
+    background-image: url(https://firebasestorage.googleapis.com/v0/b/cosmicjourney-dab3e.appspot.com/o/_2e71be04-61ca-46a5-9128-65950d120a99.jfif?alt=media&token=c46c4747-2570-425d-890d-c07f44c00164);
+    height: 100vh;
+    
+}
+.mars-form {
+    margin-top: 100px; /* Adjust this value as needed */
+    color: white;
+    text-align: center;
+    position: absolute;
+    top: 200%; /* Adjust as needed */
+    right: 10%; /* This might be too much, consider using a different approach */
+    left: -90%; /* This might be too much, consider using a different approach */
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 500px; /* This controls the max width of the form */
+    font-size: 18px; /* Use a single font-size declaration */
+    font-weight: bold; /* Optional: making the labels bold */
+    /* No additional styling needed here */
+}
+
+/* Styles for the input fields */
+.mars-form input {
+    width: fit-content; /* Full width of the form container */
+    max-width: 200px; /* Adjust the max-width as needed */
+    margin: 0 10px; /* Add some space between the fields */
+    /* Other styles for input fields */
+}
+
+/* Styles for the button */
+.mars-form button {
+    width: auto; /* Adjust the width as needed */
+    padding: 5px 50px; /* Padding for button */
+    /* Other styles for button */
+}
+
+
+.mars-activities {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0; /* Remove any default margins */
+    padding: 0;
+  }
+  
+  .mars-activities-image {
+    width: 100%; /* Full width */
+    object-fit: cover; /* Cover the area, may crop the image */
+    display: block; /* Avoid inline whitespace */
+    margin: 0; /* Remove any default margins */
+  }
+
+
+  .filler {
+    width: 100%; /* Ensure it fills the width */
+    background-color: #023e8a; /* Use a color that matches your design */
+    color: white; /* Choose a suitable text color */
+    text-align: center; /* Center the text */
+    padding: 20px 0; /* Add some vertical padding */
+    flex-grow: 500%;
+  }
+  
+  /* Remove any default margins and padding from all elements */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  }
+
+  /*EARTH CSS*/
+  .earth {
+    background-size: cover ;
+    background-position: center;
+    background-image: url(https://firebasestorage.googleapis.com/v0/b/cosmicjourney-dab3e.appspot.com/o/earthbackground.jpg?alt=media&token=c1c9531c-2374-4dcb-80af-5f30b25b4833);
+    height: 100vh;
+    
+}
+.earth-form {
+    margin-top: 100px; /* Adjust this value as needed */
+    color: white;
+    text-align: center;
+    position: absolute;
+    top: 200%; /* Adjust as needed */
+    right: 10%; /* This might be too much, consider using a different approach */
+    left: -90%; /* This might be too much, consider using a different approach */
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 500px; /* This controls the max width of the form */
+    font-size: 18px; /* Use a single font-size declaration */
+    font-weight: bold; /* Optional: making the labels bold */
+    /* No additional styling needed here */
+}
+
+/* Styles for the input fields */
+.earth-form input {
+    width: fit-content; /* Full width of the form container */
+    max-width: 200px; /* Adjust the max-width as needed */
+    margin: 0 10px; /* Add some space between the fields */
+    /* Other styles for input fields */
+}
+
+/* Styles for the button */
+.earth-form button {
+    width: auto; /* Adjust the width as needed */
+    padding: 5px 50px; /* Padding for button */
+    /* Other styles for button */
+}
+
+
+.earth-activities {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0; /* Remove any default margins */
+    padding: 0;
+  }
+  
+  .earth-activities-image {
+    width: 100%; /* Full width */
+    object-fit: cover; /* Cover the area, may crop the image */
+    display: block; /* Avoid inline whitespace */
+    margin: 0; /* Remove any default margins */
+  }
+
+
+  .filler {
+    width: 100%; /* Ensure it fills the width */
+    background-color: #023e8a; /* Use a color that matches your design */
+    color: white; /* Choose a suitable text color */
+    text-align: center; /* Center the text */
+    padding: 20px 0; /* Add some vertical padding */
+    flex-grow: 500%;
+  }
+  
+  /* Remove any default margins and padding from all elements */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  }
+
+  /*VENUS CSS*/
+  .venus {
+    background-size: cover ;
+    background-position: center;
+    background-image: url(https://firebasestorage.googleapis.com/v0/b/cosmicjourney-dab3e.appspot.com/o/venusbackground1.0.jfif?alt=media&token=01545b4b-caf5-4986-b926-93592fc6001e);
+    height: 100vh;
+    
+}
+.venus-form {
+    margin-top: 100px; /* Adjust this value as needed */
+    color: white;
+    text-align: center;
+    position: absolute;
+    top: 200%; /* Adjust as needed */
+    right: 10%; /* This might be too much, consider using a different approach */
+    left: -90%; /* This might be too much, consider using a different approach */
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 500px; /* This controls the max width of the form */
+    font-size: 18px; /* Use a single font-size declaration */
+    font-weight: bold; /* Optional: making the labels bold */
+    /* No additional styling needed here */
+}
+
+/* Styles for the input fields */
+.venus-form input {
+    width: fit-content; /* Full width of the form container */
+    max-width: 200px; /* Adjust the max-width as needed */
+    margin: 0 10px; /* Add some space between the fields */
+    /* Other styles for input fields */
+}
+
+/* Styles for the button */
+.venus-form button {
+    width: auto; /* Adjust the width as needed */
+    padding: 5px 50px; /* Padding for button */
+    /* Other styles for button */
+}
+
+
+.venus-activities {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0; /* Remove any default margins */
+    padding: 0;
+  }
+  
+  .venus-activities-image {
+    width: 100%; /* Full width */
+    object-fit: cover; /* Cover the area, may crop the image */
+    display: block; /* Avoid inline whitespace */
+    margin: 0; /* Remove any default margins */
+  }
+
+
+  .filler {
+    width: 100%; /* Ensure it fills the width */
+    background-color: #023e8a; /* Use a color that matches your design */
+    color: white; /* Choose a suitable text color */
+    text-align: center; /* Center the text */
+    padding: 20px 0; /* Add some vertical padding */
+    flex-grow: 500%;
+  }
+  
+  /* Remove any default margins and padding from all elements */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  }
+
+  /*MERCURY CSS*/
+  .mercury {
+    background-size: cover ;
+    background-position: center;
+    background-image: url(https://firebasestorage.googleapis.com/v0/b/cosmicjourney-dab3e.appspot.com/o/mercurybackground.jfif?alt=media&token=2f3e4fa4-dcee-4e3e-93aa-8dd6025670bf);
+    height: 100vh;
+    
+}
+.mercury-form {
+    margin-top: 100px; /* Adjust this value as needed */
+    color: white;
+    text-align: center;
+    position: absolute;
+    top: 200%; /* Adjust as needed */
+    right: 10%; /* This might be too much, consider using a different approach */
+    left: -90%; /* This might be too much, consider using a different approach */
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 500px; /* This controls the max width of the form */
+    font-size: 18px; /* Use a single font-size declaration */
+    font-weight: bold; /* Optional: making the labels bold */
+    /* No additional styling needed here */
+}
+
+/* Styles for the input fields */
+.mercury-form input {
+    width: fit-content; /* Full width of the form container */
+    max-width: 200px; /* Adjust the max-width as needed */
+    margin: 0 10px; /* Add some space between the fields */
+    /* Other styles for input fields */
+}
+
+/* Styles for the button */
+.mercury-form button {
+    width: auto; /* Adjust the width as needed */
+    padding: 5px 50px; /* Padding for button */
+    /* Other styles for button */
+}
+
+
+.mercury-activities {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0; /* Remove any default margins */
+    padding: 0;
+  }
+  
+  .mercury-activities-image {
+    width: 100%; /* Full width */
+    object-fit: cover; /* Cover the area, may crop the image */
+    display: block; /* Avoid inline whitespace */
+    margin: 0; /* Remove any default margins */
+  }
+
+
+  .filler {
+    width: 100%; /* Ensure it fills the width */
+    background-color: #023e8a; /* Use a color that matches your design */
+    color: white; /* Choose a suitable text color */
+    text-align: center; /* Center the text */
+    padding: 20px 0; /* Add some vertical padding */
+    flex-grow: 500%;
+  }
+  
+  /* Remove any default margins and padding from all elements */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  }

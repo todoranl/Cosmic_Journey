@@ -1,3 +1,54 @@
+/* Form styling */
+.registration-form {
+  width: 30%;
+  background: rgba(94, 121, 243, 0.986);
+  padding: 20px;
+  border-radius: 8px;
+  margin-top: 10%;
+ margin-left: 30%;
+}
+
+.registration-form h2 {
+  margin-bottom: 15px;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+.registration-form form {
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.registration-form input[type="text"],
+.registration-form input[type="email"],
+.registration-form select {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: #fff;
+  color: #727272;
+  
+}
+
+.registration-form button {
+  padding: 10px;
+  background-color: #5cb85c;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 20%;
+  margin-left: 40%;
+}
+
+.registration-form button:hover {
+  background-color: #4cae4c;
+}
+
+/* You may add more styles as needed */
 .planets-text {
     position: absolute;
     top: 30%;

@@ -52,6 +52,9 @@ const Header = () => {
               {planet}
             </Link>
           ))}
+           <Link to="/signin" className="nav-link p-2 text-white hover:text-gray-300">
+              Sign In
+            </Link>
         </nav>
       </div>
     </header>

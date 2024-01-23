@@ -1,0 +1,216 @@
+.registration-form {
+    width: 50%;
+    background: rgba(94, 121, 243, 0.986);
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 10%;
+    margin-left: 30%;
+  }
+  
+  .registration-form h1 {
+    
+    margin-bottom: 15px;
+    text-align: center;
+    font-size: 1.5em;
+  }
+  
+  .registration-form form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .registration-form input[type="text"],
+  .registration-form input[type="email"],
+  .registration-form input[type="tel"],
+  
+  .registration-form select {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #fff;
+    color: #727272;
+    width: 100%;
+  }
+  
+  .registration-form input[type="checkbox"] {
+    margin-left: 10px;
+  }
+  
+  .registration-form label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .registration-form span {
+    display: block;
+    margin-bottom: 20px;
+    font-size: 1.5em; /* Typical font-size for h2 */
+    font-weight: bold; /* Typical font-weight for h2 */
+    text-align: center; /* Centers the text horizontally */
+  }
+  
+  .registration-form button {
+    padding: 20px;
+    background-color: #5cb85c;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 30%;
+    margin-left: 40%;
+    margin-top: 10px;
+  }
+  
+  .registration-form button:hover {
+    background-color: #4cae4c;
+  }
+  .passenger-control label {
+    font-family: Arial, sans-serif; /* Change the font family */
+    font-size: 22px; /* Change the font size as needed */
+    font-weight: bold; /* Optionally make it bold */
+    color: #ffffff; /* Change the font color as needed */
+    margin-bottom: 25px; /* Adjust the space below the label */
+    text-align: left; /* Align the text to the right */
+    display: block; /* Make label a block element to occupy its own line */
+    width: 100%; /* Ensure the label is full width to align text properly */
+    padding-left: 40px;
+    position: relative; /* or absolute, fixed */
+    top: 40px; /* Adjust the value as needed */
+  }
+  
+  
+  .passenger-control label {
+    align-self: flex-start; /* Aligns the label to the start (left) */
+  margin-bottom: 5px;
+  }
+  
+  
+  .passenger-input-control {
+    display: flex;
+    align-items: center;
+    align-items: flex-end;
+   
+  }
+  
+  .passenger-input-control input[type="number"] {
+    width: 60px; /* This sets the width of the input field */
+  text-align: center;
+  position: relative; /* or absolute, fixed */
+  top: -20px; /* Adjust the value as needed */
+  height: 45px; /* New height - adjust as needed */
+  padding: 10px; /* Adjust padding for better text visibility and alignment */
+  }
+  
+  .passenger-input-control button {
+    padding: 15px; /* Adjust padding to make buttons square or as needed */
+    background-color: #ddd;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    flex-shrink: 0;
+    
+    
+  }
+  
+  .passenger-input-control button:hover {
+    background-color: #ccc;
+  }
+  .passenger-input-control button:first-child {
+    margin-right: 5px; /* Adds space between the minus button and the input */
+    margin-bottom: 10px;
+    width: 40px;
+    margin-left: 60%;
+    position: relative; /* or absolute, fixed */
+    top: -10px; /* Adjust the value as needed */
+  }
+  
+  .passenger-input-control button:last-child {
+    margin-left: 5px; /* Adds space between the input and the plus button */
+    margin-bottom: 10px;
+    width: 40px;
+    position: relative; /* or absolute, fixed */
+    top: -10px; /* Adjust the value as needed */
+  }
+  .date-input {
+    top: -30px;
+    margin-left:320px;
+    position: relative;
+    width: 30%;
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px; /* This pushes the input down by 20 pixels */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+    background-color: #fff;
+    background-image: none;
+    -webkit-appearance: none; /* Removes default styling specific to WebKit browsers */
+    -moz-appearance: none;    /* Removes default styling specific to Mozilla browsers */
+    appearance: none;         /* Removes default browser styling if supported */
+  }
+  
+  
+  
+  /* You can also style the input for when the user hovers over it */
+  .date-input:hover {
+    border-color: #a8a8a8;
+  }
+  .date-label {
+    font-family: Arial, sans-serif; /* Change the font family */
+    font-size: 22px; /* Change the font size as needed */
+    font-weight: bold; /* Optionally make it bold */
+    color: #ffffff; /* Change the font color as needed */
+    margin-bottom: 25px; /* Adjust the space below the label */
+    text-align: left; /* Align the text to the right */
+    display: block; /* Make label a block element to occupy its own line */
+    width: 100%; /* Ensure the label is full width to align text properly */
+    padding-left: 40px;
+    position: relative; /* or absolute, fixed */
+    top: 40px; /* Adjust the value as needed */
+  }
+  .number-of-days-input {
+    top: -20px;
+    margin-left:320px;
+    position: relative;
+    
+    display: block;
+   
+    margin-bottom: 0px; /* This pushes the input down by 20 pixels */
+    padding: 10px;
+  
+    border-radius: 4px;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+    background-color: #fff;
+    background-image: none;
+   
+   
+    height: 40px; /* New height - adjust as needed */
+    padding: 0px; /* Adjust padding for better text visibility and alignment */
+    width: 30%; /* Adjust the width as needed */
+    /* Other styling properties */
+    margin-left: 320px;
+    text-align: center;
+   margin-top: 0px;
+
+  }
+  .days-label {
+    font-family: Arial, sans-serif; /* Change the font family */
+    font-size: 22px; /* Change the font size as needed */
+    font-weight: bold; /* Optionally make it bold */
+    color: #ffffff; /* Change the font color as needed */
+    margin-bottom: 25px; /* Adjust the space below the label */
+    text-align: left; /* Align the text to the right */
+    display: block; /* Make label a block element to occupy its own line */
+    width: 100%; /* Ensure the label is full width to align text properly */
+    padding-left: 40px;
+    position: relative; /* or absolute, fixed */
+    top: 40px; /* Adjust the value as needed */
+
+  }

@@ -10,9 +10,10 @@ const Venus = () => {
         <h1>VENUS</h1>
           <p>Explore the wonders of the universe!</p>
           
-          <div className="venus-form">
-            <BookingForm />
-          </div>
+       
+        </div>
+        <div className="booking-form-container">
+        <BookingForm />
         </div>
       </div>
 

@@ -92,10 +92,3 @@ div.home-element {
     margin-top: -210px;
 }
 /* In your Home.css */
-.booking-form-container {
-    position: absolute;
-    top: 70%; /* Adjust as needed */
-    left: 50%;
-    transform: translateX(-50%);
-    color: #ffffff;
-}

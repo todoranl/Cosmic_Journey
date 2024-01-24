@@ -10,9 +10,10 @@ const Jupiter = () => {
         <h1>JUPITER</h1>
           <p>Explore the wonders of the universe!</p>
           
-          <div className="jupiter-form">
-            <BookingForm />
-          </div>
+         
+        </div>
+        <div className="booking-form-container">
+        <BookingForm />
         </div>
       </div>
 

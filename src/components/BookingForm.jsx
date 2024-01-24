@@ -57,13 +57,13 @@ function BookingForm() {
       </div>
 
       <div className="form-group">
-        <label htmlFor="departureDate">Departure Date:</label>
+        <label htmlFor="departureDate">Departure:</label>
         <input
           id="departureDate"
           type="date"
           value={departureDate}
           onChange={(e) => setDepartureDate(e.target.value)}
-          className="form-control"
+          className="form-departure"
         />
       </div>
 

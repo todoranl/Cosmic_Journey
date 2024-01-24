@@ -24,6 +24,17 @@ const Header = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+  const planetColors = {
+    Mercury: 'hover:text-gray-600',
+    Venus: 'hover:text-yellow-500',
+    Earth: 'hover:text-blue-500',
+    Mars: 'hover:text-red-500',
+    Jupiter: 'hover:text-orange-500',
+    Saturn: 'hover:text-pink-300',
+    Uranus: 'hover:text-green-500',
+    Neptune: 'hover:text-blue-700',
+    // Add more planets and colors as needed
+  };
 
   const planets = [
     "Mercury",
@@ -47,12 +58,12 @@ const Header = () => {
             <Link
               key={planet}
               to={`/planets/${planet.toLowerCase()}`}
-              className="nav-link p-2 text-white hover:text-gray-300"
+              className={`nav-link p-2 text-white ${planetColors[planet] || 'hover:text-gray-300'}`}
             >
               {planet}
             </Link>
           ))}
-           <Link to="/signin" className="nav-link p-2 text-white hover:text-gray-300">
+           <Link to="/signin" className="nav-link p-2 text-white hover:text-purple-300">
               Sign In
             </Link>
         </nav>

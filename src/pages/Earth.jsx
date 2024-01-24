@@ -10,9 +10,10 @@ const Earth = () => {
         <h1>EARTH</h1>
           <p>Explore the wonders of the universe!</p>
           
-          <div className="earth-form">
-            <BookingForm />
-          </div>
+         
+        </div>
+         <div className="booking-form-container">
+        <BookingForm />
         </div>
       </div>
 

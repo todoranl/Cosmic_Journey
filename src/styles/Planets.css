@@ -1,52 +1,5 @@
 /* Form styling */
-.registration-form {
-  width: 30%;
-  background: rgba(94, 121, 243, 0.986);
-  padding: 20px;
-  border-radius: 8px;
-  margin-top: 10%;
- margin-left: 30%;
-}
 
-.registration-form h2 {
-  margin-bottom: 15px;
-  text-align: center;
-  font-size: 1.5em;
-}
-
-.registration-form form {
-  display: flex;
-  flex-direction: column;
-  
-}
-
-.registration-form input[type="text"],
-.registration-form input[type="email"],
-.registration-form select {
-  padding: 10px;
-  margin-bottom: 10px;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  background-color: #fff;
-  color: #727272;
-  
-}
-
-.registration-form button {
-  padding: 10px;
-  background-color: #5cb85c;
-  color: white;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-  width: 20%;
-  margin-left: 40%;
-}
-
-.registration-form button:hover {
-  background-color: #4cae4c;
-}
 
 /* You may add more styles as needed */
 .planets-text {
@@ -97,36 +50,11 @@
     background-image: url(https://firebasestorage.googleapis.com/v0/b/cosmicjourney-dab3e.appspot.com/o/DALL%C2%B7E%202024-01-13%2004.19.30%20-%20A%20close-up%20view%20of%20Neptune%20with%20a%20predominantly%20black%20background%2C%20focusing%20on%20a%20small%20section%20of%20the%20planet%20to%20emphasize%20its%20weather%20patterns%20and%20surf.png?alt=media&token=d160b82b-db89-464f-851d-a23af6253ebf);
     height: 100vh;
 }
-.neptune-form {
-    margin-top: 100px; /* Adjust this value as needed */
-    color: white;
-    text-align: center;
-    position: absolute;
-    top: 200%; /* Adjust as needed */
-    right: 10%; /* This might be too much, consider using a different approach */
-    left: -90%; /* This might be too much, consider using a different approach */
-    transform: translateX(-50%);
-    width: 100%;
-    max-width: 500px; /* This controls the max width of the form */
-    font-size: 18px; /* Use a single font-size declaration */
-    font-weight: bold; /* Optional: making the labels bold */
-    /* No additional styling needed here */
-}
 
-/* Styles for the input fields */
-.neptune-form input {
-    width: fit-content; /* Full width of the form container */
-    max-width: 200px; /* Adjust the max-width as needed */
-    margin: 0 10px; /* Add some space between the fields */
-    /* Other styles for input fields */
-}
+
 
 /* Styles for the button */
-.neptune-form button {
-    width: auto; /* Adjust the width as needed */
-    padding: 5px 50px; /* Padding for button */
-    /* Other styles for button */
-}
+
 
 
 .neptune-activities {
@@ -456,36 +384,11 @@
     height: 100vh;
     
 }
-.earth-form {
-    margin-top: 100px; /* Adjust this value as needed */
-    color: white;
-    text-align: center;
-    position: absolute;
-    top: 200%; /* Adjust as needed */
-    right: 10%; /* This might be too much, consider using a different approach */
-    left: -90%; /* This might be too much, consider using a different approach */
-    transform: translateX(-50%);
-    width: 100%;
-    max-width: 500px; /* This controls the max width of the form */
-    font-size: 18px; /* Use a single font-size declaration */
-    font-weight: bold; /* Optional: making the labels bold */
-    /* No additional styling needed here */
-}
+
 
 /* Styles for the input fields */
-.earth-form input {
-    width: fit-content; /* Full width of the form container */
-    max-width: 200px; /* Adjust the max-width as needed */
-    margin: 0 10px; /* Add some space between the fields */
-    /* Other styles for input fields */
-}
 
 /* Styles for the button */
-.earth-form button {
-    width: auto; /* Adjust the width as needed */
-    padding: 5px 50px; /* Padding for button */
-    /* Other styles for button */
-}
 
 
 .earth-activities {
@@ -600,36 +503,12 @@
     height: 100vh;
     
 }
-.mercury-form {
-    margin-top: 100px; /* Adjust this value as needed */
-    color: white;
-    text-align: center;
-    position: absolute;
-    top: 200%; /* Adjust as needed */
-    right: 10%; /* This might be too much, consider using a different approach */
-    left: -90%; /* This might be too much, consider using a different approach */
-    transform: translateX(-50%);
-    width: 100%;
-    max-width: 500px; /* This controls the max width of the form */
-    font-size: 18px; /* Use a single font-size declaration */
-    font-weight: bold; /* Optional: making the labels bold */
-    /* No additional styling needed here */
-}
 
 /* Styles for the input fields */
-.mercury-form input {
-    width: fit-content; /* Full width of the form container */
-    max-width: 200px; /* Adjust the max-width as needed */
-    margin: 0 10px; /* Add some space between the fields */
-    /* Other styles for input fields */
-}
+
 
 /* Styles for the button */
-.mercury-form button {
-    width: auto; /* Adjust the width as needed */
-    padding: 5px 50px; /* Padding for button */
-    /* Other styles for button */
-}
+
 
 
 .mercury-activities {

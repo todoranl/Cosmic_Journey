@@ -1,11 +1,14 @@
 import React, { useState } from "react";
 import "./BookingForm.css"; // Ensure this CSS file contains all the necessary styles.
 
+import "./BookingForm.css"; // Ensure this CSS file contains all the necessary styles.
+import Login from "./Login";
+import { useNavigate } from "react-router-dom"; // Import useNavigate
 function BookingForm() {
   const [destination, setDestination] = useState("");
   const [passengers, setPassengers] = useState(1);
   const [departureDate, setDepartureDate] = useState("");
-
+  const navigate = useNavigate(); // Hook for navigation
   const planets = [
     "Mercury",
     "Venus",
@@ -24,7 +27,9 @@ function BookingForm() {
     );
     // Here you would handle the submission of the form to your backend service.
   };
-
+  const handleBookNowClick = () => {
+    navigate('/signin'); // Navigate to the login page
+  };
   return (
     <form onSubmit={handleSubmit} className="booking-form">
       <div className="form-group">
@@ -68,10 +73,14 @@ function BookingForm() {
       </div>
 
       <div className="button-container">
-        <button type="submit" className="btn btn-red">
-          Book Now
-        </button>
-      </div>
+  <button
+    type="button" // Change this from "submit" to "button"
+    onClick={handleBookNowClick} // Add the onClick event handler
+    className="btn btn-red"
+  >
+    Book Now
+  </button>
+</div>
     </form>
   );
 }

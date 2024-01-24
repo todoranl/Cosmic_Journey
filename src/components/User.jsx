@@ -3,7 +3,19 @@ import { db } from './firebase-config';
 import { collection, addDoc } from 'firebase/firestore';
 import '../styles/Form.css';
 import { getAnalytics, logEvent } from 'firebase/analytics';
+const petsData = [
+  { name: "Foxy", imageUrl: "https://firebasestorage.googleapis.com/v0/b/cosmicjourney-dab3e.appspot.com/o/pets%2FFoxy.jfif?alt=media&token=687eff2f-b2ea-471c-814a-64e1bc680e09" },
+   { name: "Pepper", imageUrl: "https://firebasestorage.googleapis.com/v0/b/cosmicjourney-dab3e.appspot.com/o/pets%2FPepper.jfif?alt=media&token=7ebd14fe-2f3d-4af2-aa35-3597997bd6f7" },
+  { name: "Joy", imageUrl: "https://firebasestorage.googleapis.com/v0/b/cosmicjourney-dab3e.appspot.com/o/pets%2FJoy.jfif?alt=media&token=d22e9285-91f6-46db-bf79-22f0823dc8d4" },
+  { name: "Luna", imageUrl: "https://firebasestorage.googleapis.com/v0/b/cosmicjourney-dab3e.appspot.com/o/pets%2FLuna.jfif?alt=media&token=dd2f1981-33f6-4a9c-bf4f-0d1a35a2c6fe" },
+  { name: "Severus", imageUrl: "https://firebasestorage.googleapis.com/v0/b/cosmicjourney-dab3e.appspot.com/o/pets%2FSeverus.jfif?alt=media&token=99092aa9-8d56-4f5e-8626-d781d10e1ec7" },
+  { name: "Simba", imageUrl: "https://firebasestorage.googleapis.com/v0/b/cosmicjourney-dab3e.appspot.com/o/pets%2FSimba.jfif?alt=media&token=fcd830d2-4d8f-42ff-93e6-c7220f4935ee" },
+  { name: "Star", imageUrl: "https://firebasestorage.googleapis.com/v0/b/cosmicjourney-dab3e.appspot.com/o/pets%2FStar.jfif?alt=media&token=99245eed-90f1-40c1-b77c-2cbd2fe60245" },
+  { name: "Timmy", imageUrl: "https://firebasestorage.googleapis.com/v0/b/cosmicjourney-dab3e.appspot.com/o/pets%2FTimmy.jpg?alt=media&token=969dfe54-5bcc-4a79-a1a1-45bf7ced30c8" },
+  { name: "Vanilla", imageUrl: "https://firebasestorage.googleapis.com/v0/b/cosmicjourney-dab3e.appspot.com/o/pets%2FVanilla.jfif?alt=media&token=3d41842f-3b86-4e2b-b38d-19f9bf68f31c" },
 
+  // ...add other pets
+];
 
 
 const User = () => {
@@ -27,7 +39,7 @@ const User = () => {
     firstClass: 3.5, // 50% more expensive than economic
   };
   // State for the registration form
-  const [registrationData, setRegistrationData] = useState({
+  const [registrationData, setRegistrationData,] = useState({
     Name: '',
     surName: '',
     email: '',
@@ -42,7 +54,13 @@ const User = () => {
     petCompanion: false,
     price: 0,
   });
-
+  const [selectedPet, setSelectedPet] = useState('');
+   // Function to handle pet selection
+   const handlePetSelection = (petName) => {
+    setSelectedPet(petName);
+    console.log("Selected Pet: ", petName);
+  };
+  
   // Function to update price
   const updatePrice = () => {
     let basePrice = planetPrices[registrationData.wantedPlanet] || 0;
@@ -86,12 +104,21 @@ const analytics = getAnalytics();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    
+    const formData = {
+      ...registrationData,
+      petCompanion: selectedPet, // Add the selected pet's name
+      price: Number(registrationData.price)
+    };
+  
+
     try {
-      const docRef = await addDoc(collection(db, "registrations"), {
-        ...registrationData,
-        // Make sure to convert price to a number if it's a string
-        price: Number(registrationData.price)
-      });
+      
+
+      const docRef = await addDoc(collection(db, "registrations"), formData);
+    console.log("Document written with ID: ", docRef.id);
+        
+    
       console.log("Document written with ID: ", docRef.id);
       
       // Log the event to Firebase Analytics
@@ -120,15 +147,18 @@ const analytics = getAnalytics();
         petCompanion: false,
         price: 0,
       });
+      setSelectedPet(''); // Reset the selected pet
     } catch (error) {
       console.error("Error adding document: ", error);
     }
   };
 
   return (
+    
     <div className="planet-page">
+      
       <div className="registration-form">
-        <h2>Register for Your Journey Now</h2>
+        <span>Register for Your Journey Now</span>
         <form onSubmit={handleSubmit}>
           <input
             type="text"
@@ -251,20 +281,29 @@ const analytics = getAnalytics();
             <option value="standard">Standard</option>
             <option value="lux">Luxury</option>
           </select>
-          <label>
-            Pet Companion:
-            <input
-              type="checkbox"
-              name="petCompanion"
-              checked={registrationData.petCompanion}
-              onChange={handleChange}
-            />
-          </label>
+            {/* Pet Selection */}
+          {/* Pet Selection Section */}
+          <div className="pet-selection">
+  {petsData.map(pet => (
+    <div
+      key={pet.name}
+      className={`pet-thumbnail ${selectedPet === pet.name ? 'selected' : ''}`}
+      onClick={() => handlePetSelection(pet.name)}
+    >
+      <img src={pet.imageUrl} alt={pet.name} className="pet-image" />
+      <p>{pet.name}</p>
+    </div>
+  ))}
+</div>
+
           <span>Price: {registrationData.price}</span>
+        
           <button type="submit">Submit Registration</button>
         </form>
       </div>
+      
     </div>
+    
   );
 };
 

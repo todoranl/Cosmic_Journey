@@ -1,10 +1,12 @@
 .registration-form {
-    width: 50%;
-    background: rgba(94, 121, 243, 0.986);
-    padding: 20px;
-    border-radius: 8px;
-    margin-top: 10%;
-    margin-left: 30%;
+
+  box-sizing: border-box;
+  padding: 3em;
+  background: rgba(0, 0, 0, 0.213);
+  width: 45%;
+  
+  background-position: center;
+  margin: 5em auto 0; /* Added top margin */
   }
   
   .registration-form h1 {
@@ -12,6 +14,8 @@
     margin-bottom: 15px;
     text-align: center;
     font-size: 1.5em;
+    color: #4cae4c;
+    background-color: #4cae4c;
   }
   
   .registration-form form {
@@ -49,11 +53,12 @@
     font-size: 1.5em; /* Typical font-size for h2 */
     font-weight: bold; /* Typical font-weight for h2 */
     text-align: center; /* Centers the text horizontally */
+    color:#fff;
   }
   
   .registration-form button {
     padding: 20px;
-    background-color: #5cb85c;
+    background-color: #1c3eff;
     color: white;
     border: none;
     border-radius: 4px;
@@ -65,7 +70,7 @@
   }
   
   .registration-form button:hover {
-    background-color: #4cae4c;
+    background-color: #e61010;
   }
   .passenger-control label {
     font-family: Arial, sans-serif; /* Change the font family */
@@ -100,14 +105,15 @@
   text-align: center;
   position: relative; /* or absolute, fixed */
   top: -20px; /* Adjust the value as needed */
-  height: 45px; /* New height - adjust as needed */
+  height: 52px; /* New height - adjust as needed */
   padding: 10px; /* Adjust padding for better text visibility and alignment */
+  border-radius: 10px;
   }
   
   .passenger-input-control button {
     padding: 15px; /* Adjust padding to make buttons square or as needed */
-    background-color: #ddd;
-    border: 1px solid #ccc;
+    background-color: #1c3eff;
+    border-radius: 10px;
     cursor: pointer;
     flex-shrink: 0;
     
@@ -214,3 +220,40 @@
     top: 40px; /* Adjust the value as needed */
 
   }
+ 
+  body {
+    margin: 0;
+    padding: 0;
+    background-image: url('https://firebasestorage.googleapis.com/v0/b/cosmicjourney-dab3e.appspot.com/o/background%2Fstele.jpg?alt=media&token=21f17c9e-9871-4371-9903-ae5d52f6e79e');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+/* Form.css */
+.pet-selection {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 5px;
+}
+
+.pet-thumbnail {
+  cursor: pointer;
+  text-align: center;
+  padding: 5px; /* Optional: to create some space around the image */
+  border-radius: 60%; /* Optional: for round thumbnails */
+
+  transition: border-color 0.3s; /* Smooth transition for border color */
+}
+
+.pet-image {
+  width: 100px; /* Smaller width for thumbnails */
+  height: 100px; /* Smaller height for thumbnails */
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.pet-thumbnail.selected {
+  background-color: #1c3eff; /* Background color when selected */
+  /* Other styles to indicate selection, like a shadow or different background */
+}

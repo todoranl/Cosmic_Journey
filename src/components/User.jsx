@@ -27,6 +27,7 @@ const User = () => {
     Jupiter: 73000,
     Saturn: 120000,
     Neptune: 43000,
+    
     // Add other planets and their prices
   };
   const accommodationPrices = {
@@ -205,6 +206,7 @@ const analytics = getAnalytics();
             <option value="Mercury">Mercury</option>
             <option value="Venus">Venus</option>
             <option value="Earth">Earth</option>
+            <option value="Mars">Mars</option>
             <option value="Jupiter">Jupiter</option>
             <option value="Saturn">Saturn</option>
             <option value="Uranus">Uranus</option>

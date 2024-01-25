@@ -39,6 +39,7 @@ const User = () => {
     firstClass: 3.5, // 50% more expensive than economic
   };
   // State for the registration form
+  
   const [registrationData, setRegistrationData,] = useState({
     Name: '',
     surName: '',
@@ -131,7 +132,9 @@ const analytics = getAnalytics();
           price: registrationData.price
         }]
       });
-  
+   // Show a simple alert for successful submission
+   alert("Thank you for your reservation. We will contact you shortly to finalize the details of your cosmic journey.");
+
       // Reset the form
       setRegistrationData({
         Name: '',

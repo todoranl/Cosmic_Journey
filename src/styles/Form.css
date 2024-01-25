@@ -222,12 +222,14 @@
   }
  
   body {
+    background: linear-gradient(90deg, #1e40af, rgba(30, 64, 175, 0));
     margin: 0;
     padding: 0;
     background-image: url('https://firebasestorage.googleapis.com/v0/b/cosmicjourney-dab3e.appspot.com/o/background%2Fstele.jpg?alt=media&token=21f17c9e-9871-4371-9903-ae5d52f6e79e');
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
+   
   }
 /* Form.css */
 .pet-selection {

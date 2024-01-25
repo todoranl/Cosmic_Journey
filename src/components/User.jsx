@@ -65,9 +65,9 @@ const User = () => {
   const updatePrice = () => {
     let basePrice = planetPrices[registrationData.wantedPlanet] || 0;
     let classMultiplier = classPriceMultiplier[registrationData.tripClass] || 1;
-    let accommodationPrice = accommodationPrices[registrationData.accommodation] || 0;
-    
-    let finalPrice = (basePrice * classMultiplier + accommodationPrice) * registrationData.numberOfPassengers;
+    let accommodationPricePerDay = accommodationPrices[registrationData.accommodation] || 0;
+    let totalAccommodationCost = accommodationPricePerDay * registrationData.numberOfDays;
+    let finalPrice = ((basePrice * classMultiplier) + totalAccommodationCost) * registrationData.numberOfPassengers;
     setRegistrationData(prevState => ({
       ...prevState,
       price: finalPrice
@@ -92,7 +92,7 @@ const analytics = getAnalytics();
 
   useEffect(() => {
     updatePrice();
-  }, [registrationData.wantedPlanet, registrationData.tripClass, registrationData.numberOfPassengers, registrationData.accommodation]);
+  }, [registrationData.wantedPlanet, registrationData.tripClass, registrationData.numberOfPassengers, registrationData.accommodation, registrationData.numberOfDays]);
 
   const handleChange = (e) => {
     const { name, value, type, checked } = e.target;
@@ -296,7 +296,7 @@ const analytics = getAnalytics();
   ))}
 </div>
 
-          <span>Price: {registrationData.price}</span>
+          <span>Price: {registrationData.price}$</span>
         
           <button type="submit">Submit Registration</button>
         </form>

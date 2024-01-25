@@ -26,6 +26,7 @@ const User = () => {
     Mars: 40000,
     Jupiter: 73000,
     Saturn: 120000,
+    Uranus: 83520,
     Neptune: 43000,
     
     // Add other planets and their prices

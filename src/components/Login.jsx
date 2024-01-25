@@ -41,7 +41,7 @@ const Login = () => {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-800 to-blue-600">
+    <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-800">
       <div className="bg-blue-900 text-white py-8 px-4 shadow-md rounded-lg max-w-sm">
         <div className="mb-4">
           <h2 className="text-xl font-bold mb-2">Sign Up</h2>

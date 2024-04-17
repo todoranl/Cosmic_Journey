@@ -49,7 +49,7 @@ const Home = () => {
               <img src="https://firebasestorage.googleapis.com/v0/b/cosmicjourney-dab3e.appspot.com/o/ourcrew1.jpg?alt=media&token=5c75afc9-8baf-4030-90f8-146cc3cc9f3d" />
               <img src="https://firebasestorage.googleapis.com/v0/b/cosmicjourney-dab3e.appspot.com/o/ourcrew2.jpg?alt=media&token=12e58bde-5b5a-4b84-b3da-f98cd5301514" />
               <img src="https://firebasestorage.googleapis.com/v0/b/cosmicjourney-dab3e.appspot.com/o/spaceships.jpg?alt=media&token=b1abab29-eb1c-4a35-8527-702c700d2cb7" />
-              <img src="https://firebasestorage.googleapis.com/v0/b/cosmicjourney-dab3e.appspot.com/o/emotionalpets.jpg?alt=media&token=931ba6ea-3a4a-46dd-ae7d-bb2240f3cea5" />
+              <img src="https://firebasestorage.googleapis.com/v0/b/cosmicjourney-dab3e.appspot.com/o/emotionalpest2.0.jpg?alt=media&token=97b79c73-d7f2-40bf-b686-b22b31f80676" />
             
             </div>
             
